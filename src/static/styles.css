@@ -59,10 +59,11 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 18px;
+  border: 1px solid #e2e7f2;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #fff, #f7f9ff);
+  box-shadow: 0 3px 10px rgba(26, 35, 126, 0.06);
 }
 
 .activity-card h4 {
@@ -72,6 +73,104 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants-section {
+  margin-top: 16px;
+  padding: 13px;
+  border-radius: 8px;
+  background-color: #eef3ff;
+}
+
+.participants-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.participants-heading h5 {
+  color: #1a237e;
+  font-size: 14px;
+}
+
+.participants-count {
+  min-width: 24px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background-color: #d8e2ff;
+  color: #1a237e;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.participants-list {
+  display: grid;
+  gap: 6px;
+  list-style: none;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  overflow-wrap: anywhere;
+  padding: 7px 8px 7px 10px;
+  border: 1px solid #e0e7fa;
+  border-radius: 6px;
+  background-color: white;
+  color: #39445f;
+  font-size: 14px;
+}
+
+.participant-email {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.participant-delete {
+  display: grid;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  padding: 6px;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #7b8498;
+}
+
+.participant-delete:hover {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.participant-delete:focus-visible {
+  outline: 2px solid #5269c7;
+  outline-offset: 2px;
+}
+
+.participant-delete svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.participants-list .participants-empty {
+  border-style: dashed;
+  background-color: transparent;
+  color: #69738a;
+  font-style: italic;
+}
+
+.participants-list .participants-empty {
+  justify-content: flex-start;
 }
 
 .form-group {
